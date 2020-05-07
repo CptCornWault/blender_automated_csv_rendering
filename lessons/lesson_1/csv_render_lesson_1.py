@@ -35,18 +35,16 @@ for render in renderJob:
     # Select the object
     objectName = "Cube"
     renderObject = bpy.data.objects[objectName]
-    print("Selected " + objectName)    
+    print("Selected " + objectName)
+
+    # Select the material           
+    material = renderObject.material_slots['cube_mat'].material    
     
     # Load the texture image
     textureImageName = render[0]
     textureImagePath = os.path.expanduser(textureBasepath + textureImageName)
     textureImage = bpy.data.images.load(textureImagePath)
     print("Texture Image Loaded")
-        
-    # Select the material
-    #material = bpy.data.materials.get("cube_mat")
-    #renderObject.data.materials[0] = material            
-    material = renderObject.material_slots['cube_mat'].material
 
     # Set the texture image        
     texture = material.node_tree.nodes['Image Texture']

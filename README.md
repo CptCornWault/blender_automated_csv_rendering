@@ -1,9 +1,3 @@
-<style type="text/css">
-    ol {
-        list-style-type: lower-alpha;
-    }
-</style>
-
 # blender_automated_csv_rendering v1.x
 A lesson in automating renders from a CSV file in blender<br />
 This lesson and its instructions is a work in progress, but feel free to use it any time.<br />
@@ -38,7 +32,7 @@ Lesson 1 is set by default
 currentJobFilePath = projectPath + 'lesson_1\\'
  ```
 
- ## Step 3
+ ## Step 4
  Begin lesson 1
 
   1. Open Blender (For this tutorial we are using blender v2.82a for Windows) and set up a default scene with the default cube. If you are using an older vesion ov Blender you may have to UV unwrap the Cube.

@@ -44,22 +44,22 @@ currentJobFilePath = projectPath + 'lesson_1\\'
 
 Begin lesson 1
 
-1. Open Blender (For this tutorial we are using blender v2.82a) and set up a default scene with the default cube. If you are using an older version ov Blender you may have to UV unwrap the Cube.
+1. Open Blender (For this tutorial we are using blender v2.82a) and set up a default scene with the default cube. If you are using an older version of Blender you may have to UV unwrap the Cube.
+
+2. Open the scripting panel and load `/lessons/lesson_1/csv_render_lesson_1.py`. Also open the System Console so that you can see the script output.
   
-2. Make sure the cube object is named `Cube`. If you want to use a different name, make sure the `objectName` reflects your object name.
+3. Make sure the cube object is named `Cube`. If you want to use a different name, make sure the `objectName` reflects your object name.
 
     ```python
     objectName = "Cube"
     ```
 
-3. Apply a material to your object, and name the material `cube_mat`. You can use a different name for the material if you change the `material_slots` key that is being accessed to define the `material` variable.
+4. Apply a material to your object, and name the material `cube_mat`. You can use a different name for the material if you change the `material_slots` key that is being accessed to define the `material` variable.
 
     ```python
     material = renderObject.material_slots['cube_mat'].material
     ```
 
-4. Set up the material to use an image texture.
-
-5. Open the scripting panel and load `/lessons/lesson_1/csv_render_lesson_1.py`. Also open the System Console so that you can see the script output.
+5. Set up the material to use an image texture.
 
 6. Run the script. It will output progress and tell you when it is finished. If there is a problem, blender will tell you the error message and where it ocurred.

@@ -1,6 +1,6 @@
 # blender_automated_csv_rendering v1.x
 
-A lesson in automating renders from a CSV file in blender  
+The following is intended to accompany a lesson in automating renders from a CSV file in blender.  
 This lesson and its instructions is a work in progress, but feel free to use it any time.  
 Check back later for links to the YouTube video series.  
 If you encounter a problem with the instructions or the script, please don't hesitate to file an issue.
@@ -23,16 +23,16 @@ Open `blender_automated_csv_rendering/lessons/csv_render_1.py` and replace the `
 For for these lessons, include `automated_csv_rendering\\lessons\\` in your path so that the script will know where to find the jobs, textures, and renders related to these lessons.
 
 ```shell
-projectPath = 'C:\\path\\to\\my\\project\\automated_csv_rendering\\lessons\\'
+projectPath = 'C:\\path\\to\\my\\project\\blender_automated_csv_rendering\\lessons\\'
 ```
 
 Don't forget to escape the slashes (`\\`) and use the trailing slash.
 
 ## Step 3
 
-Setup the lesson  
+Setup the lesson.  
 
-In teh same file as step two, update the `currentJobFilePath` with the path to the lesson directory you want to work from.  
+In the same file as step two, update the `currentJobFilePath` with the path to the lesson directory you want to work from.  
 
 Lesson 1 is set by default
 
@@ -42,7 +42,7 @@ currentJobFilePath = projectPath + 'lesson_1\\'
 
 ## Step 4
 
-Begin lesson 1
+Begin lesson 1.  
 
 1. Open Blender (For this tutorial we are using blender v2.82a) and set up a default scene with the default cube. If you are using an older version of Blender you may have to UV unwrap the Cube.
 
